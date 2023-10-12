@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gilroy';
+    color:#fff;
 }
 
 html,body{
@@ -16,5 +17,25 @@ html,body{
 
 .page1{
     height: 100vh;
-    width: 100vh;
+    width: 100%;
+}
+
+nav{
+    height:80px;
+    width: 100%;
+    background-color: red !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    height:26px;
+}
+
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
