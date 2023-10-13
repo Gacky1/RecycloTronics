@@ -1,5 +1,8 @@
-gsap.registerPlugin(ScrollTrigger);
+var crsr=document.querySelectorAll(".cursor")
+var main=document.querySelectorAll(".main")
+main.addEventListener("mousemove",function(dets) {})
 
+gsap.registerPlugin(ScrollTrigger);
 
 const locoScroll = new LocomotiveScroll({
 el: document.querySelector(".main"),
