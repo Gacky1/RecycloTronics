@@ -82,10 +82,10 @@ nav h4:nth-child(1){
 }
 
 .page2{
-    min-height: 130vh;
+    min-height: 80vh;
     width: 100%;
     padding: 100px 5vw;
-    border-bottom: 2px solid #6c6c6c;
+    border-bottom: 2px solid #000000;
 }
 
 .page2 h1{
@@ -135,4 +135,34 @@ nav h4:nth-child(1){
     background-color: #EDBFFF;
     color: #111;
     margin-top: 20px;
+}
+
+.page3{
+    min-height: 150vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+
+.page3 h1{
+    font-size: 6.8vw;
+    font-weight: 300;
+    color:#111;
+    margin-left: 100px;
+}
+
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page3-part1 img{
+    height: 400px;
+    width: 50%;
+    margin-top: 160px;
+}
+
+.page3-part1 video{
+    width: 40%;
 }
