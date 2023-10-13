@@ -76,5 +76,12 @@ nav h4:nth-child(1){
 .page1 video{
     width: 60%;
     margin-top: 10vw;
-    margin:0 20%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.page2{
+    min-height: 150vh;
+    width: 100%;
 }
