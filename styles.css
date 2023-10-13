@@ -21,12 +21,13 @@ html,body{
 }
 
 nav{
-    height:80px;
+    height:55px;
     width: 100%;
     background-color: red !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 30px;
 }
 
 nav img{
@@ -40,7 +41,7 @@ nav img{
     gap: 24px;
 }
 
-nav .circle{
+.circle{
     height: 20px;
     width: 20px;
     border-radius: 50%;
