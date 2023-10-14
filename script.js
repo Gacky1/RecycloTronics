@@ -111,21 +111,6 @@ boxes.forEach(function(box){
 
 var h4=document.querySelectorAll("nav h4")
 var purple=document.querySelector("#purple")
-h4[0].addEventListener("click",function(){
-    purple.style.display="block"
-    purple.style.opacity="1"
-}
-)
-h4[1].addEventListener("click",function(){
-    purple.style.display="block"
-    purple.style.opacity="1"
-}
-)
-h4[2].addEventListener("click",function(){
-    purple.style.display="block"
-    purple.style.opacity="1"
-}
-)
 
 h4.forEach(function(elem){
     elem.addEventListener("mouseenter",function(){
