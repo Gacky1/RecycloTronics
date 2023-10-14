@@ -29,11 +29,11 @@ html,body{
     width: 100vw;
     top: 0;
     position: fixed;
-    background-color: #EDBFFF;
     z-index: 100;
+    background-color: #EDBFFF;
     opacity: 0;
     display: none;
-    transition: all ease 1s;
+    transition: opacity ease 1s;
 }
 .main{
     background-color: #0F0d0d;
