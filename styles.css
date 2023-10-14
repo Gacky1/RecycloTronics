@@ -10,7 +10,16 @@ html,body{
     height: 100%;
     width: 100%;
 }
-
+.cursor{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index:9;
+    mix-blend-mode: difference;
+    transition: left linear 0.1s top linear 0.1s;
+}
 .main{
     background-color: #0F0d0d;
 }

@@ -1,8 +1,5 @@
-var crsr=document.querySelectorAll(".cursor")
-var main=document.querySelectorAll(".main")
-main.addEventListener("mousemove",function(dets) {})
-
-gsap.registerPlugin(ScrollTrigger);
+function init(){
+    gsap.registerPlugin(ScrollTrigger);
 
 const locoScroll = new LocomotiveScroll({
 el: document.querySelector(".main"),
@@ -22,8 +19,25 @@ pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 ScrollTrigger.refresh();
+}
+
+init()
+
+var crsr=document.querySelector(".cursor")
+var main=document.querySelector(".main")
+main.addEventListener("mousemove",function(dets) {
+    crsr.style.left = dets.x+"px"
+    crsr.style.top = dets.y+"px"
+})
 
 
+gsap.from(".page1 h1,.page1 h2",{
+    y:10,
+    rotate:10,
+    opacity:0,
+    delay:0.3,
+    duration:0.7
+})
 var tl=gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
