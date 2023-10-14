@@ -186,6 +186,51 @@ nav h4:nth-child(1){
     width: 100%;
     position: relative;
     z-index: 9;
+    padding: 100px 100px;
+}
+
+.elem{
+    /* background-color: salmon; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text-div{
+    /* background-color: lightblue; */
+    height: 145px;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 7.3vw;
+    transition: all ease-out 0.5s;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem img{
+    position: absolute;
+    height: 315px;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+
+.elem .img1{
+    left: 2%;
+}
+
+.elem .img2{
+    right: 5%;
 }
 
 .page5{
