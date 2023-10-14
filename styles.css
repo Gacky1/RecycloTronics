@@ -16,7 +16,7 @@ html,body{
     border-radius: 50%;
     position: fixed;
     background-color: #EDBFFF;
-    z-index:9;
+    z-index:8;
     mix-blend-mode: difference;
     transition: left linear 0.1s top linear 0.1s;
 }
@@ -27,6 +27,8 @@ html,body{
 .page1{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+    z-index: 9;
 }
 
 nav{
@@ -95,6 +97,8 @@ nav h4:nth-child(1){
     width: 100%;
     padding: 100px 5vw;
     border-bottom: 2px solid #000000;
+    position: relative;
+    z-index: 9;
 }
 
 .page2 h1{
@@ -147,10 +151,11 @@ nav h4:nth-child(1){
 }
 
 .page3{
-    min-height: 150vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     padding-top: 100px;
+    z-index: 9;
 }
 
 .page3 h1{
@@ -174,4 +179,18 @@ nav h4:nth-child(1){
 
 .page3-part1 video{
     width: 40%;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
 }
