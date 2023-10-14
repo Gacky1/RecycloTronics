@@ -25,9 +25,9 @@ init()
 
 var crsr=document.querySelector(".cursor")
 var main=document.querySelector(".main")
-main.addEventListener("mousemove",function(dets) {
-    crsr.style.left = dets.x+"px"
-    crsr.style.top = dets.y+"px"
+document.addEventListener("mousemove",function(dets) {
+    crsr.style.left = dets.x+20+"px"
+    crsr.style.top = dets.y+20+"px"
 })
 
 
@@ -88,4 +88,52 @@ var tl3=gsap.timeline({
 
 tl3.to(".main",{
     backgroundColor:"#0F0d0d"
+})
+
+
+var boxes=document.querySelectorAll(".box")
+boxes.forEach(function(box){
+    box.addEventListener("mouseenter",function(){
+        var att=box.getAttribute("data-image")
+        crsr.style.width="470px"
+        crsr.style.height="380px"
+        crsr.style.borderRadius="0"
+        crsr.style.backgroundImage=`url(${att})`
+    })
+    box.addEventListener("mouseleave",function(){
+        var att=box.getAttribute("data-image")
+        crsr.style.width="20px"
+        crsr.style.height="20px"
+        crsr.style.borderRadius="50%"
+        crsr.style.backgroundImage=`none`
+    })
+})
+
+var h4=document.querySelectorAll("nav h4")
+var purple=document.querySelector("#purple")
+h4[0].addEventListener("click",function(){
+    purple.style.display="block"
+    purple.style.opacity="1"
+}
+)
+h4[1].addEventListener("click",function(){
+    purple.style.display="block"
+    purple.style.opacity="1"
+}
+)
+h4[2].addEventListener("click",function(){
+    purple.style.display="block"
+    purple.style.opacity="1"
+}
+)
+
+h4.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        purple.style.display="block"
+        purple.style.opacity="1"
+    })
+    elem.addEventListener("mouseleave",function(){
+        purple.style.display="none"
+        purple.style.opacity="0"
+    })
 })

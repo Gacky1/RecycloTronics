@@ -11,17 +11,33 @@ html,body{
     width: 100%;
 }
 .cursor{
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     position: fixed;
     background-color: #EDBFFF;
     z-index:8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
     mix-blend-mode: difference;
     transition: all linear 0.2s;
 }
+
+#purle{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 100;
+    opacity: 0;
+    display: none;
+    transition: all ease 1s;
+}
 .main{
     background-color: #0F0d0d;
+    cursor: none;
 }
 
 .page1{
@@ -29,7 +45,9 @@ html,body{
     width: 100%;
     position: relative;
     z-index: 9;
+    padding-top: 12vw;
 }
+
 
 nav{
     height:55px;
@@ -39,6 +57,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
 }
 
 nav img{
@@ -73,7 +94,6 @@ nav h4:nth-child(1){
     font-size: 8vw;
     font-weight: 300;
     font-family: PP mori;
-    margin-top: 12vw;
     margin-left: 6vw;
 }
 
@@ -186,7 +206,7 @@ nav h4:nth-child(1){
     width: 100%;
     position: relative;
     z-index: 9;
-    padding: 100px 100px;
+    padding: 140px 100px;
 }
 
 .elem{
@@ -204,7 +224,8 @@ nav h4:nth-child(1){
     overflow: hidden;
 }
 .elem h1{
-    font-size: 7.3vw;
+    font-size: 7.5vw;
+    font-weight: 600;
     transition: all ease-out 0.5s;
 }
 
@@ -238,4 +259,30 @@ nav h4:nth-child(1){
     width: 100%;
     position: relative;
     z-index: 9;
+    padding: 140px 100px;
+}
+
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #EDBFFF;
+}
+
+.page5 h2{
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #dadada;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada; 
 }
