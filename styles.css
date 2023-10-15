@@ -193,7 +193,7 @@ nav h4:nth-child(1){
 
 .page3-part1 img{
     height: 400px;
-    width: 50%;
+    width: 700px;
     margin-top: 160px;
 }
 
@@ -361,18 +361,73 @@ form input{
     outline: none;
 }
 
-.form button{
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
+form button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
 }
 
-form button .fas{
-    font-size: 16px;
-    color:#000;
+form  button {
+    --primary-color: #ccc;
+    --hovered-color: rgb(3, 255, 3);
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
 }
 
+form button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+}
+
+form  button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+form  button p::before {
+    position: absolute;
+  /*   box-sizing: border-box; */
+    content: "Subscribe";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+form button:hover::after {
+    width: 100%;
+  }
+  
+form button:hover p::before {
+    width: 100%;
+}
+
+form button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+}
+
+form button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+}
 .social .fab{
     width: 40px;
     height: 40px;
@@ -390,12 +445,14 @@ hr{
     width: 90%;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 20px auto;
+    margin: 20px auto ;
+    
 }
 .copyright{
     width: 100%;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .underline{
