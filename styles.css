@@ -488,3 +488,10 @@ hr{
     }
 }
 
+.direction{
+    color: #ccc;
+}
+
+.direction:hover{
+    color: greenyellow
+}
