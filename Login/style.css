@@ -9,7 +9,8 @@
 
 body{
     background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+    background-image: url(/Login/bg2.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +45,18 @@ body{
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
+}
+
+.home{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.home:hover{
+    color:#00ff37;
+    text-decoration: underline;
+    transform: scale(1.09);
 }
 
 .container button{

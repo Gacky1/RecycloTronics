@@ -487,6 +487,21 @@ nav h4:nth-child(1){
 .elem:hover h1{
     transform: translateY(-100%);
     color: #EDBFFF;
+
+    /* .elem:nth-child(1):hover h1{
+    transform: translateY(-100%);
+    color: #ffa600;
+}
+
+.elem:nth-child(2):hover h1{
+    transform: translateY(-100%);
+    color: #ffffff;
+}
+
+.elem:nth-child(3):hover h1{
+    transform: translateY(-100%);
+    color: #09ff00;
+} */
 }
 .elem img{
     position: absolute;
