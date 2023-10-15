@@ -299,6 +299,7 @@ footer{
 footer .logo{
     height: 50px;
     width: 50px;
+    margin-bottom: 20px;
 }
 
 .col{
@@ -452,7 +453,7 @@ hr{
 .copyright{
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: -5px;
     margin-bottom: 40px;
 }
 
@@ -494,4 +495,21 @@ hr{
 
 .direction:hover{
     color: greenyellow
+}
+
+.col .desc{
+    color: #ccc;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.col h2{
+    margin-bottom: 30px;
+    transition: all 0.9s;
+}
+
+.col h2:hover{
+    color: greenyellow;
+    text-decoration: underline;
+    letter-spacing: 2;
 }
