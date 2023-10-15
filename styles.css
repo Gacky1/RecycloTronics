@@ -262,12 +262,6 @@ nav h4:nth-child(1){
     padding: 140px 100px;
 }
 
-footer{
-    height: 90vh;
-    width: 100%;
-    background-color: #EDBFFF;
-}
-
 .page5 h2{
     font-size: 4vw;
     font-weight: 400;
@@ -285,4 +279,148 @@ footer{
 
 .box:nth-last-child(1){
     border-bottom: 2px solid #dadada; 
+}
+
+
+footer{
+    height: 40vh;
+    width: 100%;
+    background:linear-gradient(to right, #00093c,#2d0b00);
+    bottom: 0;
+    color: #fff;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    padding: 100px 0 30px;
+    line-height: 20px;
+    /* position: absolute; */
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2) ,.col:nth-child(3){
+    flex-basis: 15%;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email{
+    width:fit-content ;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0; 
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 16px;
+    color:#000;
+}
+
+.social .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0px auto;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background:#fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left:100%
+    }
 }
