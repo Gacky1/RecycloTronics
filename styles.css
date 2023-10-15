@@ -292,6 +292,7 @@ footer{
     font-size: 13px;
     padding: 70px 0 30px;
     line-height: 20px;
+    cursor: default;
     /* position: absolute; */
 }
 
@@ -486,3 +487,4 @@ hr{
         left:100%
     }
 }
+
