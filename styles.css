@@ -323,6 +323,10 @@ nav h4:nth-child(1){
     }
 }
 
+/* .logotext{
+    color: #00ff26;
+} */
+
 .about-button:hover .icon-3 {
     position: absolute;
     top: -130%;
@@ -553,7 +557,7 @@ nav h4:nth-child(1){
 
 
 footer{
-    height: 40vh;
+    height: 60vh;
     width: 100%;
     background:linear-gradient(to right, #00093c,#2d0b00);
     bottom: 0;

@@ -171,48 +171,48 @@ textarea.input {
     box-shadow:10px 10px 10px #fff ;
     /* transition: 0.3s; */
 }
-  
-  .bt:hover .msg {
+
+.bt:hover .msg {
     animation: msgRun 2s forwards;
-  }
-  
-  @keyframes msgRun {
+}
+
+@keyframes msgRun {
     0% {
-      border-top: #d6d6d9 0 solid;
-      border-bottom: #f2f2f5 0 solid;
-      border-left: #f2f2f5 0 solid;
-      border-right: #f2f2f5 0 solid;
+    border-top: #d6d6d9 0 solid;
+    border-bottom: #f2f2f5 0 solid;
+    border-left: #f2f2f5 0 solid;
+    border-right: #f2f2f5 0 solid;
     }
-  
+
     20% {
-      border-top: #d6d6d9 14px solid;
-      border-bottom: #f2f2f5 14px solid;
-      border-left: #f2f2f5 20px solid;
-      border-right: #f2f2f5 20px solid;
+    border-top: #d6d6d9 14px solid;
+    border-bottom: #f2f2f5 14px solid;
+    border-left: #f2f2f5 20px solid;
+    border-right: #f2f2f5 20px solid;
     }
-  
+
     25% {
-      border-top: #d6d6d9 12px solid;
-      border-bottom: #f2f2f5 12px solid;
-      border-left: #f2f2f5 18px solid;
-      border-right: #f2f2f5 18px solid;
+    border-top: #d6d6d9 12px solid;
+    border-bottom: #f2f2f5 12px solid;
+    border-left: #f2f2f5 18px solid;
+    border-right: #f2f2f5 18px solid;
     }
-  
+
     80% {
-      border-top: transparent 12px solid;
-      border-bottom: transparent 12px solid;
-      border-left: transparent 18px solid;
-      border-right: transparent 18px solid;
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
     }
-  
+
     100% {
-      transform: translateX(150px);
-      border-top: transparent 12px solid;
-      border-bottom: transparent 12px solid;
-      border-left: transparent 18px solid;
-      border-right: transparent 18px solid;
+    transform: translateX(150px);
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
     }
-  }
+}
 
 .input-container span {
     position: absolute;
