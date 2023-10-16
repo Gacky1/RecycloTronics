@@ -25,5 +25,5 @@ gsap.fromTo(
 
 
 setTimeout(function() {
-    window.location.href = "/index.html"; // Replace with your desired URL
+    window.location.href = "/Wallet/index.html"; // Replace with your desired URL
 }, 10000);  // 10000 milliseconds is 10 seconds
