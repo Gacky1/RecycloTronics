@@ -1,53 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>RecycloTronics-Wallet</title>
+  <title>Amazon Pay balance</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .main {
+      padding: 20px;
+    }
+
+    .balance-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .balance-table th,
+    .balance-table td {
+      border: 1px solid #cccccc;
+      padding: 10px;
+    }
+
+    .balance-table th {
+      background-color: #ffffff;
+    }
+
+    .balance-table td {
+      background-color: #f9f9f9;
+    }
+
+    .balance-table td.right {
+      text-align: right;
+    }
+
+    .add-money-button {
+      background-color: #2efd00;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 700;
+      margin-left: 85%;
+      margin-top:20px;
+    }
+
+    .transaction-history {
+      margin-top: 20px;
+    }
+
+    .transaction-history h3 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .transaction-history table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .transaction-history th,
+    .transaction-history td {
+      border: 1px solid #cccccc;
+      padding: 10px;
+    }
+
+    .transaction-history th {
+      background-color: #ffffff;
+    }
+
+    .transaction-history td {
+      background-color: #f9f9f9;
+    }
+
+    .transaction-history td.right {
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>RecycloTronics-Wallet</h1>
-        <div class="balance">
-            <h2>Total balance</h2>
-            <div class="amount">Wallet: ₹1090.00</div>
-            <div class="amount">Gift Cards: ₹90.00</div>
-        </div>
-        <div class="add-money">
-            <h3>Withdraw money from Wallet</h3>
-            <input type="text" placeholder="Enter Amount">
-            <div class="quick-add">
-                <button>+₹500</button>
-                <button>+₹1000</button>
-                <button>+₹1500</button>
-            </div>
-            <p>You can withdraw up to ₹10000.00</p>
-            <button class="add-btn">Withdraw money from Wallet</button>
-        </div>
-        <div class="sidebar">
-            <h2>Do more with Amazon Pay Balance</h2>
-            <ul>
-                <li>Add Gift card to balance</li>
-                <li>Add Cash to balance</li>
-                <li>Transaction history</li>
-                <li>Manage</li>
-                <li><img src="settings-icon.png" alt="Account Settings"> Account Settings</li>
-            </ul>
-        </div>
-        <!-- <div class="side-panel">
-            <div class="balance-large">₹90.00</div>
-            <div class="option">Do more with RecycloTronics Balance</div>
-            <div class="option">Donate for welfare</div>
-            <div class="option">Redeem Gift cards</div>
-            <div class="option">Transaction history</div>
-            <div class="option">Manage</div>
-            <div class="option">
-                <img src="settings.png" alt="Settings"> Account Settings
-            </div>
-        </div> -->
-    </div>
+  <div class="header">
+    <h1>Recycler Wallet</h1>
+  </div>
 
-    <script src="script.js"></script>
+  <div class="main">
+    <h2>Total balance</h2>
+
+    <table class="balance-table">
+      <tr>
+        <th>Wallet</th>
+        <td>Rs180.00</td>
+      </tr>
+      <tr>
+        <th>Gift Cards</th>
+        <td>0.00</td>
+      </tr>
+    </table>
+
+    <button class="add-money-button">Withdraw money from Wallet</button>
+
+    <div class="transaction-history">
+      <h3>Transaction history</h3>
+
+      <table class="transaction-history-table">
+        <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Amount</th>
+        </tr>
+        <tr>
+        <td>2023-10-17</td>
+        <td>Got for Nothing phone 1</td>
+        <td>Rs180.00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // Add money to Wallet button click event
+    document.querySelector('.add-money-button').addEventListener('click', function() {
+      // Open a modal to enter the amount to add
+      // ...
+    });
+  </script>
 </body>
 </html>
