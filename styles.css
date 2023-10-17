@@ -554,10 +554,23 @@ nav h4:nth-child(1){
 .box:nth-last-child(1){
     border-bottom: 2px solid #dadada; 
 }
+.unmute-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
 
+video:hover .unmute-text {
+    display: block;
+}
 
 footer{
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     background:linear-gradient(to right, #00093c,#2d0b00);
     bottom: 0;
