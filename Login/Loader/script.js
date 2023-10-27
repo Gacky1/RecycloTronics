@@ -26,4 +26,4 @@ gsap.fromTo(
 
 setTimeout(function() {
     window.location.href = "/index.html"; // Replace with your desired URL
-}, 6000);  // 10000 milliseconds is 10 seconds
+}, 7000);  // 10000 milliseconds is 10 seconds
