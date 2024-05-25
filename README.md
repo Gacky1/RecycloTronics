@@ -1,5 +1,3 @@
-# RecycloTronics
-Recyclotronics is a E-Waste Location finder website. It was made as an industry project but now going to be live soon!
 ## Recyclotronics -  Responsible E-Waste Management
 
 Recyclotronics is a demo web project that promotes awareness and provides resources for responsible electronic waste (e-waste) disposal.
